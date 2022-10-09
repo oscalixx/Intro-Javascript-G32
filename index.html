@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G32</title>
+  </head>
+  <body>
+    <!-- Una pagina web se divide en tres partes el header, el body y el footer. En el header se especifica el encabezado como el titulo y la barra de navegacion -->
+    <header>
+      <h2 style="text-align: center">
+        BIENVENIDO GRUPO 32 - CONOCIENDO y PRACTICANDO JAVASCRIPT
+        <hr>
+        Esto es una intro a JavaScript
+      </h2>
+    </header>
+
+    <!-- En el main escribimos los elementos principales de nuestra pagina -->
+    <!-- primero se puso la p, luego el buton -->
+    <main>
+      <!-- inicio de ejercicio para cambiar una etiqueta -->
+      <h2>Cambiando el contenido de una etiqueta 567 HTML</h2>
+      <p id="demo">Texto que se va a cambiar 123 con JavaScript</p>
+      <button
+        onclick="document.getElementById('demo').innerHTML='Texto cambiado 456 con JS' "
+      >
+        Cambiar Texto
+      </button>
+      <button
+        onclick="document.getElementById('demo').innerHTML='Texto QUE SE VA CAMBIAR con JavaScript 987' "
+      >
+        Texto Original
+      </button>
+
+      <!-- EJERCICIO DE PRACTICA -->
+      <!-- <h2>Cambiando el contenido de una etiqueta HTML</h2>
+        <p id="demo">Texto que se va a cambiar con JavaScript, ASI ES EL CAMBIO</p>
+        <button onclick="document.getElementById('demo').innerHTML='Texto Original Inicial cambiado con JS' "> Cambiar Texto </button>
+        <button onclick="document.getElementById('demo').innerHTML='Texto que REMPLAZA EL ORIGINAL' "> Cambiar Texto </button> -->
+
+      <hr />
+      <!-- apagar y prender el bombillo -->
+      <h2>Cambiando atributo de una etiqueta HTML</h2>
+      <button onclick="document.getElementById('OnOff').src = 'img/on.gif'">
+        Encender
+      </button>
+      <img src="img/off.gif" alt="off" id="OnOff" />
+      <button onclick="document.getElementById('OnOff').src = 'img/off.gif'">
+        Apagar
+      </button>
+
+      <hr />
+      <!-- cambiar el tamaño del texto -->
+      <h2>Cambiando el codigo CSS de una etiqueta HTML</h2>
+      <p id="estilo">Texto al cual cambiaremos su Style</p>
+      <button
+        onclick="document.getElementById('estilo').style.fontSize= '35px'"
+      >
+        Cambiar Estilo
+      </button>
+      <button onclick="document.getElementById('estilo').style.fontSize= ''">
+        Tamaño Original
+      </button>
+    </main>
+
+    <!-- En el footer escribimos el pie de pagina  -->
+    <footer></footer>
+  </body>
+</html>
